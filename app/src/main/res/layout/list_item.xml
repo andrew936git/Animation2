@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_6dp"
+        app:cardCornerRadius="20dp"
+        android:backgroundTint="@color/logo_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="@dimen/_150dp"
+            android:layout_height="@dimen/_150dp"
+            android:layout_margin="@dimen/_6dp"
+            />
+
+        <TextView
+            android:id="@+id/nameTV"
+            android:layout_width="@dimen/_150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|end"
+            android:layout_marginEnd="@dimen/_20dp"
+            android:layout_marginTop="@dimen/_20dp"
+            android:textSize="@dimen/_24sp"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/priceTV"
+            android:layout_width="@dimen/_150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_marginEnd="@dimen/_20dp"
+            android:layout_marginBottom="@dimen/_20dp"
+            android:textSize="@dimen/_24sp"
+            android:textColor="@color/white"/>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
